@@ -1,0 +1,22 @@
+{% extends 'okid_patent/base.html'%}
+{% block content %}
+<div class="create-container">
+    <div>
+        <p><b>Создание нового приказа</b></p>
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data" id="form1" class="form1">
+        {% csrf_token %}
+        <div class="cr">
+            <input type="text" name="" placeholder="Номер приказа">
+            <input type="text" name="" placeholder="Дата приказа">
+            <input type="text" name="" placeholder="Название">
+            <input type="text" name="" placeholder="Файл">
+            <input type="text" name="" placeholder="Примечание">
+        </div>
+        <button type="submit" form="form1" value="submit" class="creatbut">Создать</button>
+    </form>
+    </div>
+        <button type="submit">Создать</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'okid_patent/base.html'%}
+{% block content %}
+<table>
+    <tr>
+        <td>Всего приказов</td>
+        <td>{{ amount }}</td>
+        <td>{{ search_field }}</td>
+        <td>
+            <form action="" method="get">
+                {{ filter.form }}
+                <input type="submit" name="Поиск">
+            </form>
+        </td>
+    </tr>
+
+</table>
+<table>
+    <thread>
+        <tr>
+            <td>№</td>
+            <td>Номер приказа</td>
+            <td>Дата приказа</td>
+            <td>Название</td>
+            <td>Документ</td>
+            <td>Примечание</td>
+            <td>Редактирование</td>
+        </tr>
+    </thread>
+    <tbody>
+        {% for prikaz in prikazy %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ prikaz.number}}</td>
+        <td>{{ prikaz.date}}</td>
+        <td>{{ prikaz.name}}</td>
+        <td><a href="">{{ prikaz.file }}</a></td>
+        <td>{{ prikaz.note}}</td>
+        <td>
+            <form action="" method="post">
+                {% csrf_token %}
+                <button type="submit" formaction="{% url 'edit' prikaz.id %}">Редактировать</button>
+            </form>
+        </td>
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

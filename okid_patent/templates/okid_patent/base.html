@@ -1,0 +1,60 @@
+<!--{#<!DOCTYPE html>#}-->
+<!--{#<html lang="ru">#}-->
+<!--{#<head>#}-->
+<!--{#    <meta charset="UTF-8">#}-->
+<!--{#    <title>ОКиД</title>#}-->
+<!--{#</head>#}-->
+<!--{#<body>#}-->
+<!--{#<form>#}-->
+<!--{#    <button type="submit" formaction="{% url 'create' %}">Создать</button>#}-->
+<!--{#    <button type="submit" formaction="{% url 'prikazy' %}">База</button>#}-->
+<!--{#    <button type="submit" formaction="{% url 'login' %}">Выйти</button>#}-->
+<!--{#</form>#}-->
+<!--{##}-->
+<!--{#{% block content %}#}-->
+<!--{##}-->
+<!--{#{% endblock %}#}-->
+<!--{#</body>#}-->
+<!--{#</html>#}-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
+    <title>ОКиД Кыргызпатент</title>
+</head>
+<body>
+<header>
+    <img src="{% static 'img/logo_long.png' %}" alt="">
+    <nav>
+        <ul>
+            <li><a href=""><button class="hedbut">Создать</button></a></li>
+            <li><a href=""><button class="hedbut">База</button></a></li>
+            <li><a href=""><button class="hedbut">Выход</button></a></li>
+        </ul>
+    </nav>
+</header>
+{% block content %}
+
+{% endblock %}
+<!--{#  <div class="create-container">#}-->
+<!--{#      <div><p><b>Создание нового приказа</b></p>#}-->
+<!--{#       </div>#}-->
+<!--{#     <form id="form1" method="get" class="form1" >#}-->
+<!--{##}-->
+<!--{#     <div class="cr">#}-->
+<!--{#     <input type="text" name="" placeholder="Номер приказа">#}-->
+<!--{#     <input type="text" name="" placeholder="Дата приказа">#}-->
+<!--{#     <input type="text" name="" placeholder="Название">#}-->
+<!--{#     <input type="text" name="" placeholder="Файл">#}-->
+<!--{#     <input type="text" name="" placeholder="Примечание">#}-->
+<!--{#     </div>#}-->
+<!--{#     <button type="submit" form="form1" value="submit" class="creatbut">#}-->
+<!--{#      Создать#}-->
+<!--{#    </button>#}-->
+<!--{#   </form>#}-->
+<!--{#  </div>#}-->
+</body>
+</html>

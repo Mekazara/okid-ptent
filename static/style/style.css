@@ -1,0 +1,250 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  counter-reset: section;
+  background-image: url(окид1.png); 
+  background-size: 100%;
+}
+header{
+  background: #fff ;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+  margin: 0 auto;
+  box-shadow: 1px 2px  #DCE1E6;
+}
+img{
+  margin-top: 17px;
+  height:140px;
+  
+}
+span{
+  text-align: center;
+  padding-left: 15px;
+
+}
+
+li,button,a{
+  color:#000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 32px;
+}
+ul{list-style-type: none;}
+li{
+  display: inline-block;
+}
+.hedbut{
+  background: transparent;
+  margin: 30px; 
+  margin-right: 0px;
+  width: 180px;
+  border: none;
+  height: 85px;
+  font-family: Times New Roman;
+}
+button:hover{
+  background: #EDEEF0;
+  transition: all 0.2s linear 0s; 
+  color: #3677C5;
+}
+.container {
+  margin: 250px auto;
+  height: 700px;
+  width: 1400px;
+  background-color: rgba(0, 125, 215, 0.0); 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+  box-shadw: 1px 2px  #DCE1E6, -1px -2px  #DCE1E6;
+}
+table{
+  width: 1350px;
+  height:550px;
+  font-size: 25px;
+  font-family:Arial Narrow, sans-serif,;
+  text-align: center;
+  margin-top: 60px;
+  border-collapse: collapse;
+  box-shadow: 2px 2px  #DCE1E6, -2px -2px  #DCE1E6;
+}
+
+a{
+  font-family: fantasy;
+}
+.baza{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  font-size: 40px;
+  color:#000;
+}
+th{
+  background-color: #9AC7FC;
+  font-style: ;
+  color: #fff;
+  opacity: 85%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);  
+}
+tr{
+  color: #000;
+  background-color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3) ;
+     
+}
+.num::before {
+ counter-increment: section;
+  content: " " counter(section) " "; 
+}
+input[type="search"]{
+  top: 20px;
+  right: 240px; 
+  border-radius: 10px;
+  position: absolute;
+  height: 52px;
+  width: 360px;
+  border: none;
+  background:#EDEEF0; 
+  font-size: 20px;  
+}
+input::placeholder{
+  color:#000;
+  font-size: 25px;
+  font-family: oblique, serif;
+  
+
+}
+.but{
+  position: absolute;
+  top: -10px;
+  right: 45px;
+  margin: 30px; 
+  margin-right: 10px;
+  width: 160px;
+  height: 52px;
+  font-size: 25PX;
+  color:#000 ;
+  background-color:#fff ;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px){
+.but{
+      bottom: 0px;
+      left: 0px;
+
+}
+.dvs-in{
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+}
+.create-container{
+  margin: 280px auto;
+  height: 500px;
+  width: 460px;
+  padding: 50px;
+  background-color: rgba(237,238,240,0.4  );
+  background-size: 100%;
+  margin-top: 40px;
+  box-shado:  2px 2px  #DCE1E6, -2px -2px  #DCE1E6;
+  text-align: center;
+}
+.create-container p{
+  color: #000;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.creatbut{
+  width: 160px;
+  height: 52px;
+  font-size: 25PX;
+  color:#000 ;
+  font-family: Times New Roman;
+  background-color:#fff ;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  margin: 30px; 
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+}
+p{
+  color:  #1F498C;
+  font-size: 40px; 
+  margin-top: 25px;
+  margin-bottom: -70px;
+}
+input{
+  width: 650px;
+  height: 65px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  background: #EDEEF0;
+} 
+.enter{
+  width: 450px;
+  height: 450px;
+  background-image: url(5a7b573adc39f16171ccbe16.png);
+  background-size: 100%;
+  margin: 250px auto;
+  text-align: center;
+  margin-top: 120px;
+  box-shadow:  2px 2px  #DCE1E6, -2px -2px  #DCE1E6;
+  border-radius: 7px;
+}
+.enter img{
+  width: 140px;
+  height: 140px;
+  margin: 15px 0 30px 0;
+  bordr: 3px solid #000;
+  border-radius: 50%;
+}
+input[type="text"], input[type="password"]{
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  font-family: Times New Roman;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  margin: 10px;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+.dws-submit{
+  padding: 13px 30px;
+  margin: 20PX 0 20PX 0;
+  font-size: 20PX;
+  color: #000 ;
+   font-family: Times New Roman;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  border-radius: 5px;
+}
+.dws-submit:hover{
+  transition: all 0.5s;
+  background: #EDEEF0 ;
+  color: #3677C5; 
+}
