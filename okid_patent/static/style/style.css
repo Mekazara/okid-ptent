@@ -2,9 +2,10 @@
   padding: 0;
   margin: 0;
 }
+
 body{
   counter-reset: section;
-  background-image: url("{% static 'img/background.jpg' %}");
+  background-image: url(img/background.png);
   background-size: 100%;
 }
 header{
@@ -17,41 +18,33 @@ header{
   margin: 0 auto;
   box-shadow: 1px 2px  #DCE1E6;
 }
-img{
+
+.img_base{
   margin-top: 17px;
   height:140px;
-  
-}
-span{
-  text-align: center;
-  padding-left: 15px;
-
 }
 
-li,button,a{
-  color:#000;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 32px;
-}
-ul{list-style-type: none;}
-li{
-  display: inline-block;
-}
 .hedbut{
   background: transparent;
-  margin: 30px; 
+  margin: 30px;
   margin-right: 0px;
   width: 180px;
   border: none;
   height: 85px;
   font-family: Times New Roman;
 }
-button:hover{
+
+.hedbut:hover{
   background: #EDEEF0;
-  transition: all 0.2s linear 0s; 
+  transition: all 0.2s linear 0s;
   color: #3677C5;
 }
+
+span{
+  text-align: center;
+  padding-left: 15px;
+}
+
 .container {
   margin: 250px auto;
   height: 700px;

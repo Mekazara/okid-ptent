@@ -6,10 +6,10 @@
         <td>{{ amount }}</td>
         <td>{{ search_field }}</td>
         <td>
-            <form action="" method="get">
-                {{ filter.form }}
-                <input type="submit" name="Поиск">
-            </form>
+<!--            <form action="" method="get">-->
+<!--                {{ filter.form }}-->
+<!--                <input type="submit" name="Поиск">-->
+<!--            </form>-->
         </td>
     </tr>
 
@@ -36,10 +36,10 @@
         <td><a href="">{{ prikaz.file }}</a></td>
         <td>{{ prikaz.note}}</td>
         <td>
-            <form action="" method="post">
-                {% csrf_token %}
-                <button type="submit" formaction="{% url 'edit' prikaz.id %}">Редактировать</button>
-            </form>
+<!--            <form action="" method="post">-->
+<!--                {% csrf_token %}-->
+<!--                <button type="submit" formaction="{% url 'edit' prikaz.id %}">Редактировать</button>-->
+<!--            </form>-->
         </td>
     </tr>
         {% endfor %}

@@ -27,7 +27,7 @@
                         <span>KYRGYZPATENT</span>
                     </div>
                     <form class="col-3" method="POST" action="">
-                        {%csrf_token%}
+                        {% csrf_token %}
                         {{ form.username }}
                         {{ form.password }}
                         <input type="submit" class="btn btn-black" value="Войти">
