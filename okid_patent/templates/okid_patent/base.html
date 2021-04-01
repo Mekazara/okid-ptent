@@ -10,7 +10,8 @@
 <body>
 <header>
     <img src="{% static 'img/logo_long.png' %}" alt="" class="img_base">
-    <form>
+    <form method="post" action="" class="main_form">
+        {% csrf_token%}
         <button type="submit" formaction="{% url 'create' %}" class="hedbut">Создать</button>
         <button type="submit" formaction="{% url 'prikazy' %}" class="hedbut">База</button>
         <button type="submit" formaction="{% url 'login' %}" class="hedbut">Выйти</button>
